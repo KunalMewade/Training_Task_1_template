@@ -1,0 +1,349 @@
+/*CSS Reset*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+/* ------Navigation bar -------*/
+#navbar{
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+
+/* ---------Navigation bar : Logo and image----------*/
+#logo{
+    
+    margin: 9px 20px 6px 29px;
+}
+
+#logo img{
+    height: 99px;
+}
+
+/* --------Navigation bar : list style----------*/
+
+#navbar::before{
+    content: " ";
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+#navbar ul{
+
+    display: flex;
+}
+
+#navbar ul li{
+   list-style: none;
+   font-size: 1.3rem;
+   padding: 0px 26px;
+
+}
+
+#navbar ul li a{
+    color: white;
+  display: block;
+  padding: 5px 10px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-family: 'Bree Serif', serif;
+ 
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+
+/* -------Home section------- */
+#home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 0px;
+    /* border: 2px solid green; */
+}
+
+
+#home::before{
+    content: " ";
+    position: absolute;
+    background: url(../img/zomato.avif) no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    opacity: 0.95;
+    z-index: -1;
+}
+
+#home h1{
+    padding-top: 200px;
+    color: white;
+    text-align: center;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+}
+
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.7rem;
+    font-family: 'Bree Serif', serif;
+    
+}
+
+
+/* ---------Services Section----- */
+#services{
+    margin: 34px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#services .box{
+
+    margin: 0px 20px;
+    border-radius: 30px;
+    /* border: 2px solid darkblue; */
+}
+
+#services .box img{
+    height: 150px;
+    margin: auto;
+    display: block;
+    border-radius: inherit;
+    transition-property: height;
+}
+#services .box img:hover{
+   height: 180px;
+   transition-duration: 1s;
+}
+
+.section-container{
+ /* border: 2px solid red; */
+margin-top:450px;
+}
+
+
+/* ------Collections------ */
+
+#collection-div{
+    margin: 34px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#collection-div .collection-box{
+
+    margin: 0px 20px;
+    border-radius: 30px;
+}
+
+
+#collection-div .collection-box img{
+    height: 150px;
+    margin: auto;
+    display: block;
+    border-radius: inherit;
+}
+#collection-div .collection-box h3{
+    font-size: 20px;
+    padding-left: 0px;
+}
+
+#collections h1{
+
+    font-size: 50px;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    padding-top: 40px;
+    padding-left: 120px;
+}
+#collections h3{
+
+    font-size: 20px;
+    color: rgb(37, 25, 25);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding-top: 10px;
+    padding-left: 120px;
+}
+
+
+
+/* ------Locality-------- */
+.local-container h1{
+    /* padding-left: 120px; */
+    text-align: center;
+    padding-top: 40px;
+    font-size: 25px;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    /* border: 2px solid blueviolet; */
+
+}
+
+#local-1{
+    border: 2px soild red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 24px;
+    
+}
+
+#local-2{
+    border: 2px soild red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 24px;
+    
+}
+
+#local-3{
+    /* border: 2px soild red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 24px;
+    
+}
+
+
+.local-container{
+   
+    /* border: 2px solid blueviolet; */
+    
+}
+
+.local-box{
+    height: 50px;
+    width: 300px;
+    border: 2px solid rgb(80, 56, 56);
+    border-radius: 10px;
+    margin: 25px;
+    box-shadow: 2px 2px 2px royalblue;
+    cursor: pointer;
+}
+
+ .local-box p{
+    text-align: center;
+    padding: 14px 20px;
+    font-size: 20px;
+}
+
+
+/* -----------Contact---------- */
+
+#contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    /* flex-direction: column; */
+}
+
+#contact .contact-box img{
+    height: 536px;
+    /* margin-top: 100px;
+    margin-left: 250px; */
+    display: block;
+    /* border-radius: inherit;
+    transition-property: height; */
+}
+
+#contact .contact-box-1{
+    height: 536px;
+    width: 428px;
+    /* margin-top: 100px;
+    margin-left: 250px; */
+    display: block;
+    justify-content: center;
+    text-align: center;
+    /* border: 2px solid red; */
+}
+
+#contact .contact-box-1 h2{
+    font-size: 16px;
+    font-family: cursive;
+    margin-top: 101px;
+    margin-left: -215px;
+    
+}
+
+
+#contact .contact-box-2{
+
+    display: flex;    
+    justify-content: center;
+    padding: 2px;
+    /* margin: 52px; */
+    /* border: 2px solid blue; */
+}
+
+#contact .contact-box-2 img{
+
+    height: 47px;
+    padding: 19px;
+    
+    
+}
+
+#contact .contact-box-1 h1{
+    font-size: 40px;
+    margin-top: 24px;
+    font-family: 'Bree Serif', serif;
+    ;
+    
+}
+
+
+#contact .contact-box-1 h3{
+    font-size: 20px;
+    margin-top: 24px;
+    font-family:'Baloo Bhaijaan 2';
+    ;
+    
+}
+
+
+
+/* ------Utility Classes */
+.h-primary{
+    padding: 20px;
+    font-size: 3.5rem;
+}
+
+
+
+
+.h-secondary{
+    padding: 20px;
+    font-size: 1.4rem;
+}
+
+.center{
+    text-align: center;
+}
+
+.btn{
+  padding: 6px 20px;
+  border: 2px solid white;
+  color: white;
+  background-color: brown;
+  margin: 17px;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
